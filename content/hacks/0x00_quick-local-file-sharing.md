@@ -5,7 +5,7 @@ weight: 10000
 pre: "<b>0x00 </b>"
 ---
 
-Did you ever try quickly to share a couple of files from your pc to your phone or vise-versa at home? The following **hack** will teach you acacly that.
+Did you ever try quickly to share a couple of files from your pc to your phone or vise-versa at home? The following **hack** will teach you exactly that.
 
 <!--more-->
 
@@ -46,4 +46,9 @@ alias share="python -m SimpleHTTPServer 8000"
 ```
 to your (`.bashrc`) or whatever configuration file is used by your shell.
 
+## Usage
 
+Move into the directory you want to share and simply type
+```
+share
+```
