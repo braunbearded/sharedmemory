@@ -1,0 +1,36 @@
+baseURL = "https://github.com/braunbearded/sharedmemory"
+languageCode = "en-us"
+title = "sharedmemory"
+theme = "hugo-theme-learn"
+defaultContentLanguage = "en"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+  editURL = "https://github.com/braunbearded/sharedmemory"
+  author = "braunbearded"
+  description = "Posts about tech related stuff"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  themeVariant = "blue"
+  disableSearch = false
+  disableLanguageSwitchingButton = false
+  disableAssetsBusting = false
+  disableInlineCopyToClipBoard = false
+
+[Languages]
+[Languages.en]
+title = "Thoughts, hacks and other stuff"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/braunbearded/sharedmemory"
+weight = 10
+
