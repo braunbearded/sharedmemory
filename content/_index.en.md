@@ -4,7 +4,7 @@ title: "Sharedmemory"
 
 # Introduction
 
-On [Sharedmemory](http://github.com/matcornic/hugo-theme-learn) we share our (tech-) hacks, tricks, knowledge and thoughts.That means your can hopefully learn something about tech stuff like programming, hardware, operations systems, open source etc.
+On [Sharedmemory](https://github.com/braunbearded/sharedmemory) we share our (tech-) hacks, tricks, knowledge and thoughts. That means your can hopefully learn something about tech stuff like programming, hardware, operations systems, open source etc.
 
 You get the information needed right to the point. No blabla, no ads, no distraction.
 
