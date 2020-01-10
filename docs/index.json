@@ -1,34 +1,34 @@
 [
 {
-	"uri": "https://github.com/braunbearded/sharedmemory/hacks/",
+	"uri": "https://braunbearded.github.io/sharedmemory/hacks/",
 	"title": "hacks",
 	"tags": [],
 	"description": "",
 	"content": "Hacks We will try to create regularly hacks, which will hopefully makes your (tech-)life easier\nPosts  Quick local file sharing  Did you ever try quickly to share a couple of files from your pc to your phone or vise-versa at home? The following hack will teach you acacly that.\n "
 },
 {
-	"uri": "https://github.com/braunbearded/sharedmemory/hacks/0x00_quick-local-file-sharing/",
+	"uri": "https://braunbearded.github.io/sharedmemory/hacks/0x00_quick-local-file-sharing/",
 	"title": "Quick local file sharing",
 	"tags": [],
 	"description": "",
 	"content": "Did you ever try quickly to share a couple of files from your pc to your phone or vise-versa at home? The following hack will teach you acacly that.\nThe following command will start a simple python webserver in your current directory which will list all directorys and files in that folder able for you to download. Check the ip address of that machine and browse to it on port 8000.\nKeep in mind that everybody in your network can potentially download the files aswell because there is no authentication by default.\n Requirements  python(3) some way of aliasing commands  Installation  just download and install python(3) for your system  Configuration Python3 Linux/Mac If you are using a Unix like system and installed python3, add\nalias share=\u0026quot;python3 -m http.server\u0026quot; to your (.bashrc) or whatever configuration file is used by your shell.\nPython Linux/Mac If you are on a Unix like system and installed python instead of python3, add\nalias share=\u0026quot;python -m SimpleHTTPServer 8000\u0026quot; to your (.bashrc) or whatever configuration file is used by your shell.\n"
 },
 {
-	"uri": "https://github.com/braunbearded/sharedmemory/",
+	"uri": "https://braunbearded.github.io/sharedmemory/",
 	"title": "Sharedmemory",
 	"tags": [],
 	"description": "",
 	"content": "Introduction On Sharedmemory we share our (tech-) hacks, tricks, knowledge and thoughts. That means your can hopefully learn something about tech stuff like programming, hardware, operations systems, open source etc.\nYou get the information needed right to the point. No blabla, no ads, no distraction.\nEverything is open-source so you can check out the progression of this site at any point an time.\nContribute Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it. You also can leave a comment or open an issue for topic suggestions.\n"
 },
 {
-	"uri": "https://github.com/braunbearded/sharedmemory/categories/",
+	"uri": "https://braunbearded.github.io/sharedmemory/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://github.com/braunbearded/sharedmemory/tags/",
+	"uri": "https://braunbearded.github.io/sharedmemory/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

@@ -1,4 +1,4 @@
-baseURL = "https://github.com/braunbearded/sharedmemory"
+baseURL = "https://braunbearded.github.io/sharedmemory/"
 languageCode = "en-us"
 title = "sharedmemory"
 theme = "hugo-theme-learn"
@@ -20,7 +20,7 @@ home = [ "HTML", "RSS", "JSON"]
   themeVariant = "blue"
   disableSearch = false
   disableLanguageSwitchingButton = false
-  disableAssetsBusting = false
+  disableAssetsBusting = true
   disableInlineCopyToClipBoard = false
 
 [Languages]
