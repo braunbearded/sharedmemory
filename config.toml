@@ -11,7 +11,7 @@ publishDir = "docs"
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-  editURL = "https://github.com/braunbearded/sharedmemory/"
+  editURL = "https://github.com/braunbearded/sharedmemory/content/"
   author = "braunbearded"
   description = "Posts about tech related stuff"
   showVisitedLinks = true
