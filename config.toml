@@ -5,6 +5,7 @@ theme = "hugo-theme-learn"
 defaultContentLanguage = "en"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
+publishDir = "docs"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
