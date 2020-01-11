@@ -4,5 +4,7 @@ date: {{ .Date }}
 draft: true
 pre: "<b>0x00 </b>"
 weight:
+tags: []
+categories: []
 ---
 
