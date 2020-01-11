@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hacks on Thoughts, hacks and other stuff</title>
+    <link>https://braunbearded.github.io/sharedmemory/categories/hacks/</link>
+    <description>Recent content in hacks on Thoughts, hacks and other stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jan 2020 20:15:24 +0100</lastBuildDate>
+    
+	<atom:link href="https://braunbearded.github.io/sharedmemory/categories/hacks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quick local file sharing</title>
+      <link>https://braunbearded.github.io/sharedmemory/hacks/0x00_quick-local-file-sharing/</link>
+      <pubDate>Fri, 10 Jan 2020 20:15:24 +0100</pubDate>
+      
+      <guid>https://braunbearded.github.io/sharedmemory/hacks/0x00_quick-local-file-sharing/</guid>
+      <description>&lt;p&gt;Did you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following &lt;strong&gt;hack&lt;/strong&gt; will teach you exactly that.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
