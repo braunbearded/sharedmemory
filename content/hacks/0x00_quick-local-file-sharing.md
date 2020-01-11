@@ -5,7 +5,7 @@ weight: 10000
 pre: "<b>0x00 </b>"
 ---
 
-Did you ever try quickly to share a couple of files from your pc to your phone or vise-versa at home? The following **hack** will teach you exactly that.
+Did you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following **hack** will teach you exactly that.
 
 <!--more-->
 
