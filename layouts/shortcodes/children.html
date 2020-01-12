@@ -41,7 +41,7 @@
 	{{ range .menu }}
 		{{ if and .Params.hidden (not $.showhidden) }}
 		{{else if eq $.style "img"}}
-        <div class="post-container"><h4><a href="{{.RelPermalink}}" >{{ .Title }}</a></h4><div class="thumbnail-container"><img src="{{.Params.thumbnail}}"/><p class="thumbnail-summary">{{.Summary}}</p></div></div>
+        <div class="post-container"><h4><a href="{{.RelPermalink}}" >{{ .Title }}</a></h4><div class="thumbnail-container"><img alt="{{.Params.thumbnailalt}}" src="{{.Params.thumbnail}}"/><p class="thumbnail-summary">{{.Summary}}</p></div></div>
 		{{else}}
 			{{if not .IsHome}}
 				{{if hasPrefix $.style "h"}}

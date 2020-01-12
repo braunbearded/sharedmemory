@@ -7,6 +7,7 @@ tags: ["cli", "ranger", "vim", "terminal"]
 categories: ["hacks"]
 summary: "If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in **vim** so I was looking for a file manager which support that kind of navigation, so I found **ranger**, the cli file manager."
 thumbnail: "/sharedmemory/hacks/images/0x01-ranger.png"
+thumbnailalt: "ranger"
 ---
 
 ![ranger](/sharedmemory/hacks/images/0x01-ranger.png)
@@ -38,7 +39,7 @@ yay -S ranger-git
 
 ### Debian based
 
-`ranger` is also in the offical debian repo. To install it run:
+`ranger` is also in the official debian repo. To install it run:
 
 ```
 apt install ranger
@@ -109,7 +110,7 @@ Everybody somewhat familiar with **vim** will get the controls pretty fast. I ca
 | j   | moves you down the file list |
 | k   | moves you up the file list   |
 
-Copying, deleting, etc. will work like in **vim**. If you want to do an action on multiply files in the directory, use `space` to select that file:
+Copying, deleting, etc. will work like in vim. If you want to do an action on multiply files in the directory, use `space` to select that file:
 
 | Key  | Description                                |
 | ---  | ------------------------------------------ |

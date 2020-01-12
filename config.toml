@@ -13,7 +13,7 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
   editURL = "https://github.com/braunbearded/sharedmemory/edit/master/content/"
   author = "braunbearded"
-  description = "Posts about tech related stuff"
+  description = "Posts about tech related stuff like programming, hacking, hardware and some personal opinions from time to time"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false

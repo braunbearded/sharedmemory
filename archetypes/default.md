@@ -8,5 +8,6 @@ tags: []
 categories: []
 summary: ""
 thumbnail: "/sharedmemory/"
+thumbnailalt: ""
 ---
 

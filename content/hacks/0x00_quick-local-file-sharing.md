@@ -7,6 +7,7 @@ tags: [python, hacks, sharing]
 categories: [hacks]
 summary: "Did you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following **hack** will teach you exactly that."
 thumbnail: "/sharedmemory/hacks/images/0x00-listing.png"
+thumbnailalt: "webserver listing"
 ---
 
 ![Listing](/sharedmemory/hacks/images/0x00-listing.png)
@@ -15,7 +16,7 @@ Did you ever try to quickly share a couple of files from your pc to your phone o
 It will start a simple python webserver in your current directory which will list all directorys and files in that folder able for you to download. Check the ip address of that machine and browse to it on port 8000.
 
 {{% notice warning %}}
-Keep in mind that **everybody** in your network can potentially download the files aswell because there is **no authentication** by default.
+Keep in mind that **everybody** in your network can potentially download the files as well because there is **no authentication** by default.
 {{% /notice %}}
 
 ## Requirements
