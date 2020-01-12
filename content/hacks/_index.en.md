@@ -5,8 +5,11 @@ chapter: true
 pre: "<b>0x00 </b>"
 ---
 
-### Hacks
+### hacks
 
-We will try to create regularly **hacks**, which will hopefully makes your (tech-)life easier
+"hacks" are small tutorials or blogpost which will boost your productivity, improve your workflow, teach you stuff or show you something currious or funny. Its the first step in becoming a real hackerman.
+
+<!-- ![hacker](/sharedmemory/hacks/images/hacker.mp4) -->
+{{% video src="/sharedmemory/hacks/images/hacker.mp4" %}}
 
 {{% children description="true" style="img" %}}
