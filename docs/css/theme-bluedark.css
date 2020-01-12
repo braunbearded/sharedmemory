@@ -202,22 +202,23 @@ ul.children.children-img div.thumbnail-container {
 }
 
 ul.children.children-img div.thumbnail-container a img {
-    max-height: 184px;
+    max-height: 187px;
     max-width: auto;
     float: left;
     border-radius: 2px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
 }
 
-#chapter p {
-    text-align: left;
-}
+/* #chapter p { */
+/*     text-align: left; */
+/* } */
 
 .thumbnail-summary {
     padding: 0.5rem;
+    text-align: left;
 }
 
 div.featherlight div.featherlight-content {
