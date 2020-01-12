@@ -177,3 +177,54 @@ div.notices.tip p:first-child:after {
     background-color: var(--MAIN-BACKGROUND-color);
 }
 
+#body img {
+    margin: auto;
+}
+
+ul.children.children-img div.post-container {
+    background-color: var(--MENU-SECTIONS-BG-color);
+    border-radius: 2px;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul.children.children-img div.post-container h4 {
+    padding-top: 0.5rem;
+}
+
+ul.children.children-img div.thumbnail-container {
+    min-height: 180px;
+}
+
+ul.children.children-img div.thumbnail-container a img {
+    max-height: 180px;
+    max-width: auto;
+    float: left;
+    border-radius: 2px;
+}
+
+div.featherlight div.featherlight-content {
+    background-color: rgba(37,44,49,0.8);
+    border-radius: 2px;
+}
+
+.sidebar-hidden #overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+div#top-bar div.progress {
+    background-color: rgba(24,26,27,0.95);
+    border-radius: 2px;
+    border-color: rgba(37,44,49,0.95);
+}
+
