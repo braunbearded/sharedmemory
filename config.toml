@@ -1,4 +1,4 @@
-baseURL = "https://braunbearded.github.io/sharedmemory/"
+baseURL = "https://sharedmemory.netlify.com/"
 languageCode = "en-us"
 title = "Sharedmemory"
 theme = "hugo-theme-learn"
