@@ -1,6 +1,6 @@
 baseURL = "https://braunbearded.github.io/sharedmemory/"
 languageCode = "en-us"
-title = "sharedmemory"
+title = "Sharedmemory"
 theme = "hugo-theme-learn"
 defaultContentLanguage = "en"
 metaDataFormat = "yaml"
@@ -25,7 +25,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.en]
-title = "sharedmemory"
+title = "Sharedmemory"
 weight = 1
 languageName = "English"
 
