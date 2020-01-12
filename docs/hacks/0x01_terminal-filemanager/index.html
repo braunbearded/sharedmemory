@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/sharedmemory/images/favicon.png" type="image/png">
 
-    <title>Categories :: Thoughts, hacks and other stuff</title>
+    <title>Terminal filemanager :: Thoughts, hacks and other stuff</title>
 
     
     <link href="/sharedmemory/css/nucleus.css" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/sharedmemory/categories/">
+  <body class="" data-url="/sharedmemory/hacks/0x01_terminal-filemanager/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -82,7 +82,7 @@
   
     
     <li data-nav-id="/sharedmemory/hacks/" title="hacks" class="dd-item 
-        
+        parent
         
         
         ">
@@ -108,7 +108,7 @@
  
   
     
-      <li data-nav-id="/sharedmemory/hacks/0x01_terminal-filemanager/" title="Terminal filemanager" class="dd-item ">
+      <li data-nav-id="/sharedmemory/hacks/0x01_terminal-filemanager/" title="Terminal filemanager" class="dd-item active">
         <a href="/sharedmemory/hacks/0x01_terminal-filemanager/">
         <b>0x01 </b>Terminal filemanager
         <i class="fas fa-check read-icon"></i>
@@ -225,6 +225,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/braunbearded/sharedmemory/edit/master/content/hacks/0x01_terminal-filemanager.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -245,7 +256,13 @@
             
           
           
-            <a href='/sharedmemory/'>Sharedmemory</a> > Categories
+            
+            
+          
+          
+            <a href='/sharedmemory/'>Sharedmemory</a> > <a href='/sharedmemory/hacks/'>hacks</a> > Terminal filemanager
+          
+         
           
          
           
@@ -256,7 +273,29 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#arch-based">Arch based</a></li>
+        <li><a href="#debian-based">Debian based</a></li>
+      </ul>
+    </li>
+    <li><a href="#configuration">Configuration</a>
+      <ul>
+        <li><a href="#personal-customization">Personal customization</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#controls">Controls</a></li>
+        <li><a href="#my-often-used-commands">My often used commands</a></li>
+      </ul>
+    </li>
+    <li><a href="#further-information">Further information</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -266,13 +305,23 @@
             
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/sharedmemory/tags/cli">cli</a>
+
+  <a class="tag-link" href="/sharedmemory/tags/ranger">ranger</a>
+
+  <a class="tag-link" href="/sharedmemory/tags/vim">vim</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-              Categories
+              Terminal filemanager
             </h1>
           
 
@@ -280,19 +329,162 @@
 
 
 
-
-
-
+<p><img src="/sharedmemory/hacks/images/0x01-ranger.png" alt="ranger"></p>
+<p>If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in <strong>vim</strong> so I was looking for a filemanager which support that kind of navigation, so I found <strong>ranger</strong>, the cli filemanger.</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
-	
-		<li><a href="/sharedmemory/categories/hacks/">hacks</a></li>
-	
+<li>ranger</li>
+<li>optional (w3m, archiv extract tools (like unrar, 7z, atool, etc.), pdftotext, and many more (check out the github repo at the bottom)</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Obviously you need to install <code>ranger</code>.</p>
+<h3 id="arch-based">Arch based</h3>
+<p><code>ranger</code> is in the official arch repo so you can install it with:</p>
+<pre><code>sudo pacman -S ranger
+</code></pre><p>or you can install the aur package:</p>
+<pre><code>yay -S ranger-git
+</code></pre><h3 id="debian-based">Debian based</h3>
+<p><code>ranger</code> is also in the offical debian repo. To install it run:</p>
+<pre><code>apt install ranger
+</code></pre><h2 id="configuration">Configuration</h2>
+<p>Like many cli programs <strong>ranger</strong> is also highly customizable. Depending on your motivation to change the default behaviour of ranger, copy at least the rc.conf into your config directory:</p>
+<pre><code>mkdir -r ~/.config/ranger
+cp /usr/share/doc/ranger/config/rc.conf ~/.config/ranger
+</code></pre><p>Almost everyline in the <code>rc.conf</code> is documented, so you should be able to customize right away. If you want to customize even more, just copy the files form <code>/usr/share/doc/ranger/config</code> to your personal config folder in home.</p>
+<h3 id="personal-customization">Personal customization</h3>
+<p>I really don't like the bookmarking system in ranger (maybe I didn't get the concept right), so I deactivated it:</p>
+<pre><code>set autosave_bookmarks false
+set save_backtick_bookmark false
+
+# Bookmarks
+#map `&lt;any&gt;  enter_bookmark %any
+#map '&lt;any&gt;  enter_bookmark %any
+#map m&lt;any&gt;  set_bookmark %any
+#map um&lt;any&gt; unset_bookmark %any
+#
+#map m&lt;bg&gt;   draw_bookmarks
+#copymap m&lt;bg&gt;  um&lt;bg&gt; `&lt;bg&gt; '&lt;bg&gt;
+</code></pre><p>Because I deactivated the bookmarks I needed something similar, so I added some mappings to my most visited directorys:</p>
+<pre><code>map dic cd ~/.config
+map did cd ~/Downloads
+map dis cd ~/scripts
+</code></pre><p><strong>ranger</strong> does a good job with previewing all kind of files:</p>
+<pre><code>set preview_images true
+set preview_images_method w3m
+</code></pre><p>filter files as-you-type:</p>
+<pre><code>map f console scout -prts%space
+</code></pre><h2 id="usage">Usage</h2>
+<p><strong>ranger</strong> has a 3 column view by default. The middle on is your &ldquo;working&rdquo; column. Here you can run all kind of (vim) commands (see below for quick explanation how the controls work). Generally the first and third column will show you the content &ldquo;below&rdquo; or &ldquo;up&rdquo; (if you would cd into that directory) that directory. Whenever you highlight a file instead of the directory, ranger will show you a preview of that file.</p>
+<h3 id="controls">Controls</h3>
+<p>Everybody somewhat familiar with <strong>vim</strong> will get the controls pretty fast. I case you don't:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>h</td>
+<td>moves you down the file tree</td>
+</tr>
+<tr>
+<td>l</td>
+<td>moves you up the file tree</td>
+</tr>
+<tr>
+<td>j</td>
+<td>moves you down the file list</td>
+</tr>
+<tr>
+<td>k</td>
+<td>moves you up the file list</td>
+</tr>
+</tbody>
+</table>
+<p>Copying, deleting, etc. will work like in <strong>vim</strong>. If you want to do an action on multiply files in the directory, use <code>space</code> to select that file:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>space</td>
+<td>select/unselect file</td>
+</tr>
+<tr>
+<td>yy</td>
+<td>copy selection/file</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>cut selection/file</td>
+</tr>
+<tr>
+<td>:</td>
+<td>run command</td>
+</tr>
+<tr>
+<td>v</td>
+<td>toggle (select) all files in the directory</td>
+</tr>
+<tr>
+<td>/</td>
+<td>search/jump to search-phrase</td>
+</tr>
+</tbody>
+</table>
+<p>If you want more than one tab for browsing you can easily open more:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alt+1</td>
+<td>open/switch to tab 1</td>
+</tr>
+<tr>
+<td>alt+2</td>
+<td>open/switch to tab 2</td>
+</tr>
+<tr>
+<td>alt+x</td>
+<td>open/switch to tab x</td>
+</tr>
+<tr>
+<td>q</td>
+<td>close current tab</td>
+</tr>
+</tbody>
+</table>
+<h3 id="my-often-used-commands">My often used commands</h3>
+<p><strong>ranger</strong> has some neat features. I will show some of my favorites.</p>
+<h4 id="bulkrenaming">Bulkrenaming</h4>
+<p>Just select all files you want to rename (with space oder v) and then type <code>:bulkrename</code>. It will open a vim buffer which will let you rename the files with <strong>vim</strong>. When you are happy with your changes just exit the buffer with <code>:wq</code>.</p>
+<h4 id="flat">Flat</h4>
+<p>Another nice feature is the <code>flat</code> command. Imagine you have file structure with a good amount of files and neasted directorys. With <code>flat -1</code> ranger will prefix files in nested directory with the name of this directorys and &ldquo;move&rdquo; it in your working column. Now you have one list with all files and directorys, which you can excute commands on.</p>
+<h4 id="filter-as-you-type">Filter as you type</h4>
+<p>In addition to the command above, it would be nice so somewhat filter that huge list of files. We can do that with <code>:scout -prts</code>. This will shrink the list as you type.</p>
+<h2 id="further-information">Further information</h2>
+<p>If you want to customize <strong>ranger</strong> further more, something doesn't work or you need more information, check out the links below or open an issue on github for this post.</p>
+<ul>
+<li><a href="https://wiki.archlinux.org/index.php/Ranger">arch wiki</a></li>
+<li><a href="https://github.com/ranger/ranger">ranger github page</a></li>
 </ul>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -325,8 +517,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -340,6 +530,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -356,6 +547,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -380,8 +574,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/sharedmemory/hacks/" title="hacks"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/sharedmemory/hacks/" title="hacks" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/sharedmemory/hacks/0x00_quick-local-file-sharing/" title="Quick local file sharing" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -411,3 +607,4 @@
 
   </body>
 </html>
+
