@@ -1,17 +1,17 @@
 ---
-title: "Terminal filemanager"
+title: "Terminal file manager"
 date: 2020-01-12T12:34:31+01:00
 pre: "<b>0x01 </b>"
 weight: 1
-tags: ["cli", "ranger", "vim"]
+tags: ["cli", "ranger", "vim", "terminal"]
 categories: ["hacks"]
-summary: "If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in **vim** so I was looking for a filemanager which support that kind of navigation, so I found **ranger**, the cli filemanger."
+summary: "If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in **vim** so I was looking for a file manager which support that kind of navigation, so I found **ranger**, the cli file manager."
 thumbnail: "/sharedmemory/hacks/images/0x01-ranger.png"
 ---
 
 ![ranger](/sharedmemory/hacks/images/0x01-ranger.png)
 
-If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in **vim** so I was looking for a filemanager which support that kind of navigation, so I found **ranger**, the cli filemanger.
+If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in **vim** so I was looking for a file manager which support that kind of navigation, so I found **ranger**, the cli file manager.
 
 ## Requirements
 
