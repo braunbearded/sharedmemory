@@ -1,7 +1,7 @@
 ---
 title: "Quick local file sharing"
 date: 2020-01-10T20:15:24+01:00
-weight: 10000
+weight: 0
 pre: "<b>0x00 </b>"
 tags: [python, hacks, sharing]
 categories: [hacks]
