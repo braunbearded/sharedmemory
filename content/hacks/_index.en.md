@@ -9,5 +9,4 @@ pre: "<b>0x00 </b>"
 
 We will try to create regularly **hacks**, which will hopefully makes your (tech-)life easier
 
-#### Posts
 {{% children description="true" style="img" %}}

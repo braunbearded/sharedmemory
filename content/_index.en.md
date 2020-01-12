@@ -2,7 +2,7 @@
 title: "Sharedmemory"
 ---
 
-# Introduction
+# Intro
 
 On [Sharedmemory](https://github.com/braunbearded/sharedmemory) we share our (tech-) hacks, tricks, knowledge and thoughts. That means your can hopefully learn something about tech stuff like programming, hardware, operations systems, open source etc.
 
