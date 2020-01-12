@@ -6,11 +6,11 @@ weight: 1
 tags: ["cli", "ranger", "vim", "terminal"]
 categories: ["hacks"]
 summary: "If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in **vim** so I was looking for a file manager which support that kind of navigation, so I found **ranger**, the cli file manager."
-thumbnail: "/sharedmemory/hacks/images/0x01-ranger.png"
+thumbnail: "/hacks/images/0x01-ranger.png"
 thumbnailalt: "ranger"
 ---
 
-![ranger](/sharedmemory/hacks/images/0x01-ranger.png)
+![ranger](/hacks/images/0x01-ranger.png)
 
 If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in **vim** so I was looking for a file manager which support that kind of navigation, so I found **ranger**, the cli file manager.
 

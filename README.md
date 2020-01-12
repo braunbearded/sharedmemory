@@ -2,7 +2,7 @@
 
 Blog about tech stuff
 
-Visit [sharedmemory!!!](https://braunbearded.github.io/sharedmemory/)
+Visit [sharedmemory!!!](https://sharedmemory.netlify.com/)
 
 ## Requirements
 
