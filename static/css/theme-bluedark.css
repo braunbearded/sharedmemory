@@ -1,6 +1,7 @@
 
 :root{
 
+    --TABLE-HEADER-BG-color:#282C34; /* Background color of other sections */
     --POST-CLIPBOARD-BORDER-color:#aaa;
     --POST-CLIPBOARD-TEXT-color:#000;
     --POST-CLIPBOARD-BG-color:#1C90F3;
@@ -185,14 +186,15 @@ ul.children.children-img div.post-container {
     background-color: var(--MENU-SECTIONS-BG-color);
     border-radius: 2px;
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
 
 ul.children.children-img div.post-container h4 {
     padding-top: 0.5rem;
+    margin-bottom: 0;
 }
 
 ul.children.children-img div.thumbnail-container {
@@ -200,10 +202,22 @@ ul.children.children-img div.thumbnail-container {
 }
 
 ul.children.children-img div.thumbnail-container a img {
-    max-height: 180px;
+    max-height: 184px;
     max-width: auto;
     float: left;
     border-radius: 2px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+#chapter p {
+    text-align: left;
+}
+
+.thumbnail-summary {
+    padding: 0.5rem;
 }
 
 div.featherlight div.featherlight-content {
@@ -230,4 +244,16 @@ div#top-bar div.progress {
 
 ul.children.children-img {
     padding: 0;
+}
+
+table thead tr th {
+    background-color: var(--TABLE-HEADER-BG-color);
+}
+
+#body-inner table {
+    border: 1px solid var(--POST-CLIPBOARD-ICON-BG-color);
+}
+
+#body-inner table tbody tr td {
+    border: 1px solid var(--POST-CLIPBOARD-ICON-BG-color);
 }
