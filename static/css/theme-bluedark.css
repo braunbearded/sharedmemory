@@ -167,8 +167,8 @@ div.notices.note p:first-child:after {
     content: 'Note';
 }
 div.notices.tip p {
-    border-top: 30px solid rgba(92, 184, 92, 0.8);
-    background: #E6F9E6;
+    border-top: 30px solid rgba(43, 105, 43, 0.8);
+    background: #0D350D;
 }
 div.notices.tip p:first-child:after {
     content: 'Tip';
