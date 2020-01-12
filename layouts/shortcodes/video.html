@@ -1,0 +1,7 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $src :=  .Get "src" }}
+<div class="video-container">
+<video preload="auto" autoplay loop>
+    <source src="{{$src}}" type="video/mp4">
+</video>
+</div>
