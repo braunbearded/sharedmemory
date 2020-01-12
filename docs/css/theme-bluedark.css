@@ -228,3 +228,6 @@ div#top-bar div.progress {
     border-color: rgba(37,44,49,0.95);
 }
 
+ul.children.children-img {
+    padding: 0;
+}
