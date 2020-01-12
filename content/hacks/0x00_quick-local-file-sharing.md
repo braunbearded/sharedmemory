@@ -5,11 +5,12 @@ weight: 10000
 pre: "<b>0x00 </b>"
 tags: [python, hacks, sharing]
 categories: [hacks]
+summary: "Did you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following **hack** will teach you exactly that."
+thumbnail: "/sharedmemory/hacks/images/0x00-listing.png"
 ---
 
+![Listing](/sharedmemory/hacks/images/0x00-listing.png)
 Did you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following **hack** will teach you exactly that.
-
-<!--more-->
 
 The following command will start a simple python webserver in your current directory which will list all directorys and files in that folder able for you to download. Check the ip address of that machine and browse to it on port 8000.
 
