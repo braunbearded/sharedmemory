@@ -257,3 +257,9 @@ table thead tr th {
 #body-inner table tbody tr td {
     border: 1px solid var(--POST-CLIPBOARD-ICON-BG-color);
 }
+
+.video-container {
+    margin: 0;
+    width: 100%;
+}
+

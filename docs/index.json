@@ -11,7 +11,7 @@
 	"title": "hacks",
 	"tags": [],
 	"description": "",
-	"content": "Hacks We will try to create regularly hacks, which will hopefully makes your (tech-)life easier\nTerminal filemanagerIf you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in vim so I was looking for a filemanager which support that kind of navigation, so I found ranger, the cli filemanger.\n Quick local file sharingDid you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following hack will teach you exactly that.\n  "
+	"content": "hacks \u0026ldquo;hacks\u0026rdquo; are small tutorials or blogpost which will boost your productivity, improve your workflow, teach you stuff or show you something currious or funny. Its the first step in becoming a real hackerman.\n  Terminal filemanagerIf you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in vim so I was looking for a filemanager which support that kind of navigation, so I found ranger, the cli filemanger.\n Quick local file sharingDid you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following hack will teach you exactly that.\n  "
 },
 {
 	"uri": "https://braunbearded.github.io/sharedmemory/categories/",
