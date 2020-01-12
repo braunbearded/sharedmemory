@@ -263,3 +263,7 @@ table thead tr th {
     width: 100%;
 }
 
+video {
+    max-width: 100%;
+}
+
