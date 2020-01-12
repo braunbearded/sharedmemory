@@ -1,5 +1,5 @@
 ---
-title: hacks
+title: "thoughts, hacks and other stuff"
 weight: 10
 chapter: true
 pre: "<b>0x00 </b>"
