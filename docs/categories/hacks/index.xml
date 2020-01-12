@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Terminal filemanager</title>
+      <title>Terminal file manager</title>
       <link>https://braunbearded.github.io/sharedmemory/hacks/0x01_terminal-filemanager/</link>
       <pubDate>Sun, 12 Jan 2020 12:34:31 +0100</pubDate>
       
       <guid>https://braunbearded.github.io/sharedmemory/hacks/0x01_terminal-filemanager/</guid>
-      <description>If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in &lt;strong&gt;vim&lt;/strong&gt; so I was looking for a filemanager which support that kind of navigation, so I found &lt;strong&gt;ranger&lt;/strong&gt;, the cli filemanger.</description>
+      <description>If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in &lt;strong&gt;vim&lt;/strong&gt; so I was looking for a file manager which support that kind of navigation, so I found &lt;strong&gt;ranger&lt;/strong&gt;, the cli file manager.</description>
     </item>
     
     <item>
