@@ -6,7 +6,7 @@ pre: "<b>0x00 </b>"
 tags: [python, hacks, sharing]
 categories: [hacks]
 summary: "Did you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following **hack** will teach you exactly that."
-thumbnail: "/hacks/images/0x00-listing.png"
+thumbnail: "/hacks/images/0x00-listing-tn.png"
 thumbnailalt: "webserver listing"
 ---
 
