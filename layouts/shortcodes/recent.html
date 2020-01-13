@@ -1,0 +1,50 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
+<ul>
+    {{ .Scratch.Set "pages" .Page.Pages }}
+
+    {{if .Page.IsHome}}
+        {{ $rootPage := where .Page.Pages "Dir" "" }}
+        {{ .Scratch.Set "pages" (.Page.Sections | union $rootPage)}}
+    {{else}}
+        {{ if .Page.Sections}}
+            {{ .Scratch.Set "pages" (.Page.Pages | union .Page.Sections) }}
+        {{end}}
+    {{end}}
+
+    {{ $pages := (.Scratch.Get "pages") }}
+
+    {{template "recent" dict "menu" $pages  "count" 0 "pages" .Site.Pages }}
+</ul>
+{{.Inner|safeHTML}}
+
+{{ define "recent" }}
+    {{ $counter := 0 }}
+    {{ range .menu }}
+        {{if not .IsHome}}
+            {{if eq .Dir "hacks/"}}
+                {{if not (in (string .File) "index")}}
+                    {{if lt $counter 3}}
+                        <li>
+                            <a href="{{.RelPermalink}}">{{ .Title }}</a>
+                            <p>{{.Summary }}</p>
+                        </li>
+                        {{ $counter = add $counter 1 }}
+                    {{end}}
+                {{end}}
+            {{end}}
+
+            {{ if .Sections}}
+                {{ .Scratch.Set "pages" (.Pages | union .Sections) }}
+            {{else}}
+                {{ .Scratch.Set "pages" .Pages }}
+            {{end}}
+
+            {{ $pages := (.Scratch.Get "pages") }}
+
+            {{template "recent" dict "menu" $pages "pages" .Site.Pages }}
+        {{end}}
+    {{ end }}
+{{ end }}
+
+
