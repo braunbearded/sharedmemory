@@ -1,12 +1,6 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-<form method="POST" action="https://sharedmemory-staticman.herokuapp.com/v2/entry/braunbearded/sharedmemory/staticman/comments">
-  <input name="options[redirect]" type="hidden" value="https://my-site.com">
-  <!-- e.g. "2016-01-02-this-is-a-post" -->
-  <input name="options[slug]" type="hidden" value="test">
-  <label><input name="fields[name]" type="text">Name</label>
-  <label><input name="fields[email]" type="email">E-mail</label>
+<form method="POST" action="https://sharedmemory-staticman.herokuapp.com/v2/entry/braunbearded/sharedmemory/master/comments">
   <label><textarea name="fields[message]"></textarea>Message</label>
-
   <button type="submit">Go!</button>
 </form>
 
