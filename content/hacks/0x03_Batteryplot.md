@@ -61,4 +61,20 @@ Now you can draw the plot:
 
 I recommend to set an alias for this is you shell config. You should see an empty plot now. Since the cronjob runs only once every 3 minutes, it will take some time until you see something useful in your plot.
 
+## Further information
+
+It is possible to transfer this software easily to other OS. The only critical point is the monitoring program. If you don't use UPower, you can adapt the deamon.sh script. The interface for this deamon to communicate with the plotting program is the file "~/.batteryusage/battery_data".
+Basicly it simply appends the current batterylevel to this file. That should be easy to do in any OS you use. Just make sure the file does not get too big (i chop it after 500 lines) due to performance issues.
+
+```
+~/.batteryusage/battery_data example content:
+
+50
+49
+48
+48
+47
+...
+```
+
 If you have ideas how to improve this little tool, pullrequests are welcome!
