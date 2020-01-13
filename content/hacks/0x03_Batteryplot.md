@@ -14,7 +14,7 @@ thumbnailalt: "screenshot"
 
 [@claussmann](https://github.com/claussmann) On a smartphone you can monitor your batterylife easily. In nice graphics most OS show you an approximation of your batterytime left, when you used how much energy and what app drains your battery most.
 
-Linux-systems can show you your current batterylevel and also an approximation of how long it will last. But as far as i know, you cannot look back into past. Therefor i recently coded a short program, that monitors your battery and can print a nice plot in the CLI.
+As most operating systems, Linux-systems can show your current batterylevel and also an approximation of how long it will last. But as far as i know, you cannot look back into past. Therefor i recently coded a short program, that monitors your battery and can print a nice plot in your shell.
 
 ## Requirements
 
@@ -22,10 +22,6 @@ Linux-systems can show you your current batterylevel and also an approximation o
 
 
 ## Install
-
-
-
-## Run
 
 First step is to clone the repo [from Github.](https://github.com/claussmann/battery_plot)
 You will also find the newest documentation and installation notices there.
@@ -37,7 +33,10 @@ make install
 
 ```
 
-This will create a new directory "~/.batteryusage" and copy all compiled files there.
+This will create a new directory "~/.batteryusage" and copy all compiled files into it.
+
+## Run
+
 To start monitoring, you have these options to choose from:
 
 * Run manually (for testing purposes):
