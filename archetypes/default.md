@@ -12,5 +12,4 @@ thumbnailalt: ""
 ---
 
 
-#### Comment
 {{% comments %}}
