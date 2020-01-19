@@ -78,3 +78,6 @@ Basicly it simply appends the current batterylevel to this file. That should be 
 ```
 
 If you have ideas how to improve this little tool, pullrequests are welcome!
+
+#### Comment
+{{% comments %}}
