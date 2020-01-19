@@ -153,5 +153,4 @@ If you want to customize **ranger** further more, something doesn't work or you 
 - [arch wiki](https://wiki.archlinux.org/index.php/Ranger)
 - [ranger github page](https://github.com/ranger/ranger)
 
-####·Comment
 {{% comments %}}

@@ -75,5 +75,4 @@ The documentation for SpeedCrunsh is quite good and not to long so have a look a
 
 It seems SpeedCrunsh is not under heavy development so if you want to contribute visit the official [bitbucket repo](https://bitbucket.org/heldercorreia/speedcrunch/src/master/).
 
-#### Comment
 {{% comments %}}
