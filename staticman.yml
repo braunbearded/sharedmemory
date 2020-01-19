@@ -1,0 +1,15 @@
+comments:
+  allowedFields: ["message"]
+  branch: "master"
+  commitMessage: "Add Staticman data"
+  filename: "entry"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"
+  moderation: true
+  name: "eduardoboucas.com"
+  path: "_data/comments/"
+  requiredFields: ["message"]
