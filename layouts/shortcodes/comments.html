@@ -1,4 +1,8 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
+
+<section class="post-comments">
+<h4>Comments</h4>
+
 <form method="POST" action="https://sharedmemory-staticman.herokuapp.com/v2/entry/braunbearded/sharedmemory/master/comments">
   <input name="options[redirect]" type="hidden" value="{{.Page.Permalink}}">
 
@@ -8,4 +12,27 @@
 
   <button class="btn btn-default" type="submit">Send</button>
 </form>
+
+  {{ $comments := readDir "data/comments" }}
+  {{ $.Scratch.Add "hasComments" 0 }}
+  {{ $entryId := .Page.UniqueID }}
+
+  {{ range $comments }}
+    {{ if eq .Name $entryId }}
+      {{ $.Scratch.Add "hasComments" 1 }}
+      {{ range $index, $comments := (index $.Site.Data.comments $entryId ) }}
+        <div class="post-comment">
+          <div class="post-comment-header">
+            <p class="post-comment-info"><strong>{{ .name }}</strong> on {{ dateFormat "02.01.2006" .date }}</p>
+          </div>
+          {{ .message | markdownify }}
+        </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if eq ($.Scratch.Get "hasComments") 0 }}
+    <p>Nothing here yet.</p>
+  {{ end }}
+</section>
 
