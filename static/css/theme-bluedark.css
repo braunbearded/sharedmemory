@@ -268,3 +268,20 @@ video {
     max-width: 100%;
 }
 
+form label input {
+    color: var(--MAIN-TEXT-color) !important;
+    background-color: var(--TABLE-HEADER-BG-color) !important;
+}
+
+form label textarea {
+    color: var(--MAIN-TEXT-color) !important;
+    background-color: var(--TABLE-HEADER-BG-color) !important;
+}
+
+textarea:focus {
+    border:1px solid var(--MENU-HEADER-BG-color) !important;
+}
+
+input:focus {
+    border:1px solid var(--MENU-HEADER-BG-color) !important;
+}

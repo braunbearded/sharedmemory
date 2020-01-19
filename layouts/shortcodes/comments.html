@@ -1,6 +1,11 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 <form method="POST" action="https://sharedmemory-staticman.herokuapp.com/v2/entry/braunbearded/sharedmemory/master/comments">
-  <label><textarea name="fields[message]"></textarea>Message</label>
-  <button type="submit">Go!</button>
+  <input name="options[redirect]" type="hidden" value="{{.Page.Permalink}}">
+
+  <input name="options[slug]" type="hidden" value="{{.Page.UniqueID}}">
+  <label>Name<input name="fields[name]" type="text"></label>
+  <label>Message<textarea name="fields[message]"></textarea></label>
+
+  <button class="btn btn-default" type="submit">Send</button>
 </form>
 
