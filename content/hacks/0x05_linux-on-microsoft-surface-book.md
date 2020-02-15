@@ -7,7 +7,7 @@ tags: ["linux", "kernel", "microsoft-surface"]
 categories: ["hacks"]
 summary: "If you want to run Linux exclusively or as a dual-boot configuration with Windows&reg; on a Microsoft&reg; Surface device you came to the right place."
 thumbnail: "/hacks/images/0x05-Tux.png"
-thumbnailalt: ""
+thumbnailalt: "Linux Tux"
 ---
 
 Many people believe that buying a Microsoft&reg; Surface device as a developer is a bad choice. Not only is Windows pre installed but you cannot just 
