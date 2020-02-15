@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fun on Sharedmemory</title>
+    <link>https://sharedmemory.netlify.com/tags/fun/</link>
+    <description>Recent content in fun on Sharedmemory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jan 2020 21:21:31 +0100</lastBuildDate>
+    
+	<atom:link href="https://sharedmemory.netlify.com/tags/fun/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Retro Soundcurve</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x02_retro-soundcurve/</link>
+      <pubDate>Sun, 12 Jan 2020 21:21:31 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x02_retro-soundcurve/</guid>
+      <description>Show a visualization of your microphones input.</description>
+    </item>
+    
+  </channel>
+</rss>

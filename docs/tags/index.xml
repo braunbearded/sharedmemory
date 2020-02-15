@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sharedmemory</title>
+    <link>https://sharedmemory.netlify.com/tags/</link>
+    <description>Recent content in Tags on Sharedmemory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 00:29:07 +0100</lastBuildDate>
+    
+	<atom:link href="https://sharedmemory.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GUI</title>
+      <link>https://sharedmemory.netlify.com/tags/gui/</link>
+      <pubDate>Wed, 15 Jan 2020 00:29:07 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/gui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://sharedmemory.netlify.com/tags/math/</link>
+      <pubDate>Wed, 15 Jan 2020 00:29:07 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kernel</title>
+      <link>https://sharedmemory.netlify.com/tags/kernel/</link>
+      <pubDate>Tue, 14 Jan 2020 19:12:06 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/kernel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://sharedmemory.netlify.com/tags/linux/</link>
+      <pubDate>Tue, 14 Jan 2020 19:12:06 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microsoft-surface</title>
+      <link>https://sharedmemory.netlify.com/tags/microsoft-surface/</link>
+      <pubDate>Tue, 14 Jan 2020 19:12:06 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/microsoft-surface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>battery</title>
+      <link>https://sharedmemory.netlify.com/tags/battery/</link>
+      <pubDate>Mon, 13 Jan 2020 12:46:21 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/battery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>https://sharedmemory.netlify.com/tags/cli/</link>
+      <pubDate>Mon, 13 Jan 2020 12:46:21 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notebook</title>
+      <link>https://sharedmemory.netlify.com/tags/notebook/</link>
+      <pubDate>Mon, 13 Jan 2020 12:46:21 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/notebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>https://sharedmemory.netlify.com/tags/statistics/</link>
+      <pubDate>Mon, 13 Jan 2020 12:46:21 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>audio</title>
+      <link>https://sharedmemory.netlify.com/tags/audio/</link>
+      <pubDate>Sun, 12 Jan 2020 21:21:31 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/audio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fun</title>
+      <link>https://sharedmemory.netlify.com/tags/fun/</link>
+      <pubDate>Sun, 12 Jan 2020 21:21:31 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/fun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ranger</title>
+      <link>https://sharedmemory.netlify.com/tags/ranger/</link>
+      <pubDate>Sun, 12 Jan 2020 12:34:31 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/ranger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terminal</title>
+      <link>https://sharedmemory.netlify.com/tags/terminal/</link>
+      <pubDate>Sun, 12 Jan 2020 12:34:31 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://sharedmemory.netlify.com/tags/vim/</link>
+      <pubDate>Sun, 12 Jan 2020 12:34:31 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hacks</title>
+      <link>https://sharedmemory.netlify.com/tags/hacks/</link>
+      <pubDate>Fri, 10 Jan 2020 20:15:24 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/hacks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://sharedmemory.netlify.com/tags/python/</link>
+      <pubDate>Fri, 10 Jan 2020 20:15:24 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sharing</title>
+      <link>https://sharedmemory.netlify.com/tags/sharing/</link>
+      <pubDate>Fri, 10 Jan 2020 20:15:24 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/tags/sharing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

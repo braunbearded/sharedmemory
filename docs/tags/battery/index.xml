@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>battery on Sharedmemory</title>
+    <link>https://sharedmemory.netlify.com/tags/battery/</link>
+    <description>Recent content in battery on Sharedmemory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jan 2020 12:46:21 +0100</lastBuildDate>
+    
+	<atom:link href="https://sharedmemory.netlify.com/tags/battery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Batteryplot</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x03_batteryplot/</link>
+      <pubDate>Mon, 13 Jan 2020 12:46:21 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x03_batteryplot/</guid>
+      <description>Monitor your batteryusage on a notebook</description>
+    </item>
+    
+  </channel>
+</rss>

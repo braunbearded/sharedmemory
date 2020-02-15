@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="description" content="Posts about tech related stuff like programming, hacking, hardware and some personal opinions from time to time">
+<meta name="author" content="braunbearded">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Linux on Microsoft Surface :: Sharedmemory</title>
+
+    
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/auto-complete.css" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/hugo-theme.css" rel="stylesheet">
+    
+      <link href="/css/theme-bluedark.css" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/hacks/0x05_linux-on-microsoft-surface-book/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+    <img alt="Sharedmemory" src="/images/logo.png">
+    </img>
+    <div>
+        <b>Sharedmemory</b>
+    </div>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/auto-complete.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/sharedmemory.netlify.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/hacks/" title="Hacks" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/hacks/">
+          <b>0x00 </b>Hacks
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hacks/0x04_best-calculator/" title="Best calculator" class="dd-item ">
+        <a href="/hacks/0x04_best-calculator/">
+        <b>0x04 </b>Best calculator
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hacks/0x05_linux-on-microsoft-surface-book/" title="Linux on Microsoft Surface" class="dd-item active">
+        <a href="/hacks/0x05_linux-on-microsoft-surface-book/">
+        <b>0x05 </b>Linux on Microsoft Surface
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hacks/0x03_batteryplot/" title="Batteryplot" class="dd-item ">
+        <a href="/hacks/0x03_batteryplot/">
+        <b>0x03 </b>Batteryplot
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hacks/0x02_retro-soundcurve/" title="Retro Soundcurve" class="dd-item ">
+        <a href="/hacks/0x02_retro-soundcurve/">
+        <b>0x02 </b>Retro Soundcurve
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hacks/0x01_terminal-filemanager/" title="Terminal file manager" class="dd-item ">
+        <a href="/hacks/0x01_terminal-filemanager/">
+        <b>0x01 </b>Terminal file manager
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hacks/0x00_quick-local-file-sharing/" title="Quick local file sharing" class="dd-item ">
+        <a href="/hacks/0x00_quick-local-file-sharing/">
+        <b>0x00 </b>Quick local file sharing
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/braunbearded/sharedmemory"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    <a href="https://github.com/braunbearded/sharedmemory/archive/master.zip" aria-label="Download braunbearded/sharedmemory on Github">
+        <span>
+            <i class="fas fa-download"></i>
+            Download
+        </span>
+    </a>
+
+    <a href="https://github.com/braunbearded/sharedmemory" aria-label="Star braunbearded/sharedmemory on Github">
+        <span>
+            <i class="fas fa-star"></i>
+            Star
+        </span>
+    </a>
+
+    <a href="https://github.com/braunbearded/sharedmemory" aria-label="Fork braunbearded/sharedmemory on Github">
+        <span>
+            <i class="fas fa-code-branch"></i>
+            Fork
+        </span>
+    </a>
+
+    <p>
+    Theme:
+        <a href="https://github.com/matcornic/hugo-theme-learn" aria-label="Check out matcornic/hugo-theme-learn on Github">
+            <span>
+                <i class="fab fa-github"></i>
+                hugo-theme-learn
+            </span>
+        </a>
+    <p>
+</center>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/braunbearded/sharedmemory/edit/master/content/hacks/0x05_linux-on-microsoft-surface-book.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/hacks/'>Hacks</a> > Linux on Microsoft Surface
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#disable-bitlocker">Disable BitLocker</a></li>
+        <li><a href="#setup-your-partitions">Setup your partitions</a></li>
+        <li><a href="#install-linux-distribution">Install Linux Distribution</a></li>
+        <li><a href="#configurate-boot-loader-and-secureboot">Configurate boot-loader and SecureBoot</a></li>
+        <li><a href="#install-custom-kernel">Install custom Kernel</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/linux">linux</a>
+
+  <a class="tag-link" href="/tags/kernel">kernel</a>
+
+  <a class="tag-link" href="/tags/microsoft-surface">microsoft-surface</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Linux on Microsoft Surface
+            </h1>
+          
+
+        
+
+
+
+<p>Many people believe that buying a Microsoft® Surface device as a developer is a bad choice. Not only is Windows pre installed but you cannot just
+rip it off and install your favourite Linux distribution.<br>
+I bought my Surface Book without having any idea how powerful and convenient Linux can be. Sketching together a simple script to
+automate a task or writing complex applications in Java or C, Linux will be your goto OS for developement (maybe MacOS if you got the money).
+So I decided, I'll try to make it work on my Surface device and discovered, I am not the only one with this goal.<br>
+In the following article I try give some useful tips and share my experiences.</p>
+<h3 id="overview">Overview</h3>
+<p><a href="#disable-bitlocker">Disable BitLocker</a><br>
+<a href="#setup-your-partitions">Setup your partitions</a><br>
+<a href="#install-linux-distribution">Install Linux Distribution</a><br>
+<a href="#configurate-boot-loader-and-sercureboot">Configurate boot-loader and SecureBoot</a><br>
+<a href="#install-custom-kernel">Install custom Kernel</a> <br>
+<a href="#conslusion">Conclusion</a></p>
+<h3 id="disable-bitlocker">Disable BitLocker</h3>
+<p>The first thing I noticed when I started to edit my partitions is, that Microsoft by default enables BitLocker on their Surface devices.<br>
+BitLocker is a proprietary disk encryption feature and secures the main Windows System partition.<br>
+In order to install Linux you have to disable the encryption, espacially if you are aiming to setup a dual-boot environment.<br>
+To disable the BitLocker feature you can follow this <a href="https://www.dell.com/support/article/de/de/debsdt1/sln302845/aktivieren-oder-deaktivieren-von-bitlocker-mit-tpm-in-windows?lang=de#DisablingBitlocker">guide</a></p>
+<h3 id="setup-your-partitions">Setup your partitions</h3>
+<p>With BitLocker out of the way, you can start setting everything up for the Linux install.<br>
+If you want to get rid of Windows just skip this segment and jump to the next one, if you want a dual-boot setup
+you have to take a few extra steps.</p>
+<p>First of all you need to shrink your NTFS partition on which your current Windows OS runs on. <strong>Make sure to backup any important data before proceeding.</strong><br>
+I recommend leaving at least 40-50 GB for Windows. <strong>Do not touch</strong> any of the other partitions Microsoft set up for the OS, they are important.<br>
+If you need help with shrinking your system partition visit the <a href="https://docs.microsoft.com/de-de/windows-server/storage/disk-management/shrink-a-basic-volume">Windows support site on this topic</a><br>
+Now everything is setup for the installation of your Linux distribution.</p>
+<h3 id="install-linux-distribution">Install Linux Distribution</h3>
+<p>First of all you need to choose a distribution, the choice is yours. After you came to decision, download the ISO-Image for your distribution and create
+a bootable USB-Drive (I recommend using <a href="https://rufus.ie/">Rufus</a>).<br>
+After you finished this step proceed to change the boot-order in your UEFI settings (click <a href="https://www.laptopmag.com/articles/access-bios-windows-10">here</a> if you have trubble accessing the UEFI)
+and reboot. You should now find yourself in a desktop environment of the Linux distribution you have chosen and be prompted the option to install it.<br>
+From here on just follow the instructions and install your new Linux. Use the space on your disk you freed earlier to setup all partitions you need.</p>
+<h3 id="configurate-boot-loader-and-secureboot">Configurate boot-loader and SecureBoot</h3>
+<p>At this point you should be pretty much good to go with your new Linux OS, but there may be some obstacles remaining. FIrst of all, if you are running dual boot and your Linux distribution
+does not set it's boot loader to the highest priority you have to go back to the UEFI and select the installed Linux boot-loader as your primary one. If you still got trouble
+regarding the booting process you might want to install <code>boot-repair</code> in Linux and setup everything properly.</p>
+<p>The other problem you will face, regarding the next step, is, that Microsoft enables SecureBoot by default, which does not allow to boot an unsigned kernel, you can disable it in the UEFI
+aswell. Just setting it to <code>Allow 3rd party applications</code> might do the trick aswell.</p>
+<h3 id="install-custom-kernel">Install custom Kernel</h3>
+<p>After you got your booting processes sorted out, you may notice that the touch screen and some other Surface specific funtions are not working or behaving oddly. Luckily we do not have to
+fix any driver issues and bugs by ourselfs but we can install the <a href="https://github.com/jakeday/linux-surface">Jakeday Kernel</a> which gives us most of the needed drivers and fixes for basically
+any Microsoft Surface device we need.<br>
+The main repository got the pre-compiled modules for debian based (Ubuntu, Xubuntu, etc.) system ready, if you have chosen an Arch based distribution you can use <a href="https://github.com/dmhacker/arch-linux-surface">this</a> repository for the compiled kernel aswell.
+If you are using neither Arch- nor Debian-based distributions you have to compile the kernel by yourself (for instructions see the README.md on the Jakeday Kernel's page).<br>
+To install the new Kernel you can follow the step by step instructions provided on the Jakeday Kernel's README page on how to setup the kernel patches.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>In conclusion I have to say, there is some work required to get Linux running on your Microsoft machine but in my opinion it is worth the hassle. You can learn
+a lot about Linux as well as Windows and get a better understanding of disk partioning. With the Jakeday kernel there is really not much left not working.<br>
+The Wifi-module in my first-gen Surface Book bugs out after hibernation but that can be fixed by opening a terminal and restarting the wifi driver.<br>
+Appart from this I have followed the above steps and initially installed Ubuntu and now Manjaro, both working flawless in a day by day envrionment with Manjaro
+having the advantage of being an Arch-based system which is easily customizable.<br>
+I hope the experiences provided here may help you setup your own Linux environment on a Microsoft Surface machine.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/hacks/0x04_best-calculator/" title="Best calculator"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/hacks/0x03_batteryplot/" title="Batteryplot" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/perfect-scrollbar.min.js"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="/js/jquery.sticky.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js"></script>
+    <script src="/js/learn.js"></script>
+    <script src="/js/hugo-learn.js"></script>
+
+    <link href="/mermaid/mermaid.css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

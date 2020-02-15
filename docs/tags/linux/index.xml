@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Sharedmemory</title>
+    <link>https://sharedmemory.netlify.com/tags/linux/</link>
+    <description>Recent content in linux on Sharedmemory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jan 2020 19:12:06 +0100</lastBuildDate>
+    
+	<atom:link href="https://sharedmemory.netlify.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux on Microsoft Surface</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x05_linux-on-microsoft-surface-book/</link>
+      <pubDate>Tue, 14 Jan 2020 19:12:06 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x05_linux-on-microsoft-surface-book/</guid>
+      <description>If you want to run Linux exclusively or as a dual-boot configuration with Windows® on a Microsoft® Surface device you came to the right place.</description>
+    </item>
+    
+  </channel>
+</rss>

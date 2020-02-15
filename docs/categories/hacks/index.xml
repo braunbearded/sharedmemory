@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hacks on Sharedmemory</title>
+    <link>https://sharedmemory.netlify.com/categories/hacks/</link>
+    <description>Recent content in hacks on Sharedmemory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 00:29:07 +0100</lastBuildDate>
+    
+	<atom:link href="https://sharedmemory.netlify.com/categories/hacks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Best calculator</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x04_best-calculator/</link>
+      <pubDate>Wed, 15 Jan 2020 00:29:07 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x04_best-calculator/</guid>
+      <description>Are you sick of your simple calculator which can&#39;t even convert binary to hexadecimal without a hassle? Do you use google for your calculations? Look no further. I will show you the best (in my opionion) calculator for advanced math on all operating systems. Let&#39;s check out the open source, GPL licenced program called &lt;strong&gt;SpeedCrunsh&lt;/strong&gt;.</description>
+    </item>
+    
+    <item>
+      <title>Linux on Microsoft Surface</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x05_linux-on-microsoft-surface-book/</link>
+      <pubDate>Tue, 14 Jan 2020 19:12:06 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x05_linux-on-microsoft-surface-book/</guid>
+      <description>If you want to run Linux exclusively or as a dual-boot configuration with Windows® on a Microsoft® Surface device you came to the right place.</description>
+    </item>
+    
+    <item>
+      <title>Batteryplot</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x03_batteryplot/</link>
+      <pubDate>Mon, 13 Jan 2020 12:46:21 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x03_batteryplot/</guid>
+      <description>Monitor your batteryusage on a notebook</description>
+    </item>
+    
+    <item>
+      <title>Retro Soundcurve</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x02_retro-soundcurve/</link>
+      <pubDate>Sun, 12 Jan 2020 21:21:31 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x02_retro-soundcurve/</guid>
+      <description>Show a visualization of your microphones input.</description>
+    </item>
+    
+    <item>
+      <title>Terminal file manager</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x01_terminal-filemanager/</link>
+      <pubDate>Sun, 12 Jan 2020 12:34:31 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x01_terminal-filemanager/</guid>
+      <description>If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in &lt;strong&gt;vim&lt;/strong&gt; so I was looking for a file manager which support that kind of navigation, so I found &lt;strong&gt;ranger&lt;/strong&gt;, the cli file manager.</description>
+    </item>
+    
+    <item>
+      <title>Quick local file sharing</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x00_quick-local-file-sharing/</link>
+      <pubDate>Fri, 10 Jan 2020 20:15:24 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x00_quick-local-file-sharing/</guid>
+      <description>Did you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following &lt;strong&gt;hack&lt;/strong&gt; will teach you exactly that.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>math on Sharedmemory</title>
+    <link>https://sharedmemory.netlify.com/tags/math/</link>
+    <description>Recent content in math on Sharedmemory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 00:29:07 +0100</lastBuildDate>
+    
+	<atom:link href="https://sharedmemory.netlify.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Best calculator</title>
+      <link>https://sharedmemory.netlify.com/hacks/0x04_best-calculator/</link>
+      <pubDate>Wed, 15 Jan 2020 00:29:07 +0100</pubDate>
+      
+      <guid>https://sharedmemory.netlify.com/hacks/0x04_best-calculator/</guid>
+      <description>Are you sick of your simple calculator which can&#39;t even convert binary to hexadecimal without a hassle? Do you use google for your calculations? Look no further. I will show you the best (in my opionion) calculator for advanced math on all operating systems. Let&#39;s check out the open source, GPL licenced program called &lt;strong&gt;SpeedCrunsh&lt;/strong&gt;.</description>
+    </item>
+    
+  </channel>
+</rss>

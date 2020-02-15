@@ -1,0 +1,197 @@
+[
+{
+	"uri": "https://sharedmemory.netlify.com/hacks/0x04_best-calculator/",
+	"title": "Best calculator",
+	"tags": ["GUI", "math"],
+	"description": "",
+	"content": "Are you sick of your simple calculator which can't even convert binary to hexadecimal without a hassle? Do you use google for your calculations? Look no further. I will show you the best (in my opionion) calculator for advanced math on all operating systems. Let's check out the open source, GPL licenced program called SpeedCrunsh.\nRequirements  SpeedCrunsh  Installation To install SpeedCrunsh just check out the installation section on SpeedCrunsh, they have you covert there.\nLinux All mayor package managers have speedcrunsh in their repository:\nOn Debian based systems run:\nsudo apt-get install speedcrunch On Fedora based systems run:\nsudo yum install speedcrunch On Arch based systems run:\nsudo pacman -S speedcrunsh Configuration Not much to configure here beside your font and color pallet and general settings like math stuff and layout. There are some preconfigured themes which are pretty nice. I use \u0026ldquo;sublime\u0026rdquo; because it fits my general desktop theme.\nYou can either configured SpeedCrunsh in the GUI or by the config file somewhere in your home directory (on Linux ~/.config/SpeedCrunsh/SpeedCrunsh.ini).\nIf you want some more information check settings or advanced topics.\nUsage Here is where SpeedCrunsh shines. General usage is pretty strait forward and selfexplaning. The list of build in functions is huge, so I won't cover it here but you can list available function in the GUI by selection View \u0026gt; Functions or have a look at functions. SpeedCrunsh has some feature that separates it from other advanced calculators. Check some of my favorites below.\nFavorites No particular order here\n Seamless switch between number systems at the bottom of the GUI Setting up variables which you can use in your formulas (ex: n = 200) Huge and easy to read history of calculations you did in the past Save/Load different sessions (loads history and variables) Scientific formulas Auto-completion  Further reading The documentation for SpeedCrunsh is quite good and not to long so have a look at it: documentation.\nContribute It seems SpeedCrunsh is not under heavy development so if you want to contribute visit the official bitbucket repo.\nComments Name Message Send  Nothing here yet.\n "
+},
+{
+	"uri": "https://sharedmemory.netlify.com/hacks/0x05_linux-on-microsoft-surface-book/",
+	"title": "Linux on Microsoft Surface",
+	"tags": ["linux", "kernel", "microsoft-surface"],
+	"description": "",
+	"content": "Many people believe that buying a Microsoft® Surface device as a developer is a bad choice. Not only is Windows pre installed but you cannot just rip it off and install your favourite Linux distribution.\nI bought my Surface Book without having any idea how powerful and convenient Linux can be. Sketching together a simple script to automate a task or writing complex applications in Java or C, Linux will be your goto OS for developement (maybe MacOS if you got the money). So I decided, I'll try to make it work on my Surface device and discovered, I am not the only one with this goal.\nIn the following article I try give some useful tips and share my experiences.\nOverview Disable BitLocker\nSetup your partitions\nInstall Linux Distribution\nConfigurate boot-loader and SecureBoot\nInstall custom Kernel Conclusion\nDisable BitLocker The first thing I noticed when I started to edit my partitions is, that Microsoft by default enables BitLocker on their Surface devices.\nBitLocker is a proprietary disk encryption feature and secures the main Windows System partition.\nIn order to install Linux you have to disable the encryption, espacially if you are aiming to setup a dual-boot environment.\nTo disable the BitLocker feature you can follow this guide\nSetup your partitions With BitLocker out of the way, you can start setting everything up for the Linux install.\nIf you want to get rid of Windows just skip this segment and jump to the next one, if you want a dual-boot setup you have to take a few extra steps.\nFirst of all you need to shrink your NTFS partition on which your current Windows OS runs on. Make sure to backup any important data before proceeding.\nI recommend leaving at least 40-50 GB for Windows. Do not touch any of the other partitions Microsoft set up for the OS, they are important.\nIf you need help with shrinking your system partition visit the Windows support site on this topic\nNow everything is setup for the installation of your Linux distribution.\nInstall Linux Distribution First of all you need to choose a distribution, the choice is yours. After you came to decision, download the ISO-Image for your distribution and create a bootable USB-Drive (I recommend using Rufus).\nAfter you finished this step proceed to change the boot-order in your UEFI settings (click here if you have trubble accessing the UEFI) and reboot. You should now find yourself in a desktop environment of the Linux distribution you have chosen and be prompted the option to install it.\nFrom here on just follow the instructions and install your new Linux. Use the space on your disk you freed earlier to setup all partitions you need.\nConfigurate boot-loader and SecureBoot At this point you should be pretty much good to go with your new Linux OS, but there may be some obstacles remaining. FIrst of all, if you are running dual boot and your Linux distribution does not set it's boot loader to the highest priority you have to go back to the UEFI and select the installed Linux boot-loader as your primary one. If you still got trouble regarding the booting process you might want to install boot-repair in Linux and setup everything properly.\nThe other problem you will face, regarding the next step, is, that Microsoft enables SecureBoot by default, which does not allow to boot an unsigned kernel, you can disable it in the UEFI aswell. Just setting it to Allow 3rd party applications might do the trick aswell.\nInstall custom Kernel After you got your booting processes sorted out, you may notice that the touch screen and some other Surface specific funtions are not working or behaving oddly. Luckily we do not have to fix any driver issues and bugs by ourselfs but we can install the Jakeday Kernel which gives us most of the needed drivers and fixes for basically any Microsoft Surface device we need.\nThe main repository got the pre-compiled modules for debian based (Ubuntu, Xubuntu, etc.) system ready, if you have chosen an Arch based distribution you can use this repository for the compiled kernel aswell. If you are using neither Arch- nor Debian-based distributions you have to compile the kernel by yourself (for instructions see the README.md on the Jakeday Kernel's page).\nTo install the new Kernel you can follow the step by step instructions provided on the Jakeday Kernel's README page on how to setup the kernel patches.\nConclusion In conclusion I have to say, there is some work required to get Linux running on your Microsoft machine but in my opinion it is worth the hassle. You can learn a lot about Linux as well as Windows and get a better understanding of disk partioning. With the Jakeday kernel there is really not much left not working.\nThe Wifi-module in my first-gen Surface Book bugs out after hibernation but that can be fixed by opening a terminal and restarting the wifi driver.\nAppart from this I have followed the above steps and initially installed Ubuntu and now Manjaro, both working flawless in a day by day envrionment with Manjaro having the advantage of being an Arch-based system which is easily customizable.\nI hope the experiences provided here may help you setup your own Linux environment on a Microsoft Surface machine.\n"
+},
+{
+	"uri": "https://sharedmemory.netlify.com/hacks/0x03_batteryplot/",
+	"title": "Batteryplot",
+	"tags": ["battery", "notebook", "cli", "statistics"],
+	"description": "",
+	"content": "@claussmann On a smartphone you can monitor your batterylife easily. In nice graphics most OS show you an approximation of your batterytime left, when you used how much energy and what app drains your battery most.\nAs most operating systems, Linux-systems can show your current batterylevel and also an approximation of how long it will last. But as far as i know, you cannot look back into past. Therefor i recently coded a short program, that monitors your battery and can print a nice plot in your shell.\nRequirements  UPower (or whatever service your OS uses)  Install First step is to clone the repo from Github. You will also find the newest documentation and installation notices there.\nGo to the cloned directory an run\nmake install This will create a new directory \u0026ldquo;~/.batteryusage\u0026rdquo; and copy all compiled files into it.\nRun To start monitoring, you have these options to choose from:\n Run manually (for testing purposes):  ~/.batteryusage/deamon.sh  Run as cronjob atomatically (recommended):  crontab -e #Append: */3 * * * * /home/YOUR_USER/.batteryusage/deamon-cron.sh Now you can draw the plot:\n~/.batteryusage/batteryusage-plot I recommend to set an alias for this is you shell config. You should see an empty plot now. Since the cronjob runs only once every 3 minutes, it will take some time until you see something useful in your plot.\nFurther information It is possible to transfer this software easily to other OS. The only critical point is the monitoring program. If you don't use UPower, you can adapt the deamon.sh script. The interface for this deamon to communicate with the plotting program is the file \u0026ldquo;~/.batteryusage/battery_data\u0026rdquo;. Basicly it simply appends the current batterylevel to this file. That should be easy to do in any OS you use. Just make sure the file does not get too big (i chop it after 500 lines) due to performance issues.\n~/.batteryusage/battery_data example content: 50 49 48 48 47 ... If you have ideas how to improve this little tool, pullrequests are welcome!\nComments Name Message Send  Nothing here yet.\n "
+},
+{
+	"uri": "https://sharedmemory.netlify.com/hacks/0x02_retro-soundcurve/",
+	"title": "Retro Soundcurve",
+	"tags": ["fun", "audio", "cli"],
+	"description": "",
+	"content": "@claussmann There is a lot of nice musicplayer software around, that can display a nice visualization of your music while it is playing. Nowadays, in a time of streaming services, it is no longer easy to show a visualization since you don't have the MP3-files. So how about if you could make the visualization completely independent of the player or software? The key to this is your microphone!\nRequirements  GStreamer and Pulseaudio installed on your machine Microphone  Getting started If everything is installed, you should be able to run this comand out of the box:\ngst-launch-1.0 pulsesrc ! audioconvert ! wavescope ! ximagesink You should now see a window with several waves moving around to the tones that the microphone picks up. Try playing music and watch what happens. You may want to adjust the volume of the microphone in the pulseaudio settings to fit the graphics to your windowsize.\nCustomization As you will notice, GStreamer interpretes the \u0026ldquo;!\u0026rdquo; as a \u0026ldquo;pipe\u0026rdquo; just like in your shell. You can simply plug different components together.\n audiosource ! visualisation ! videoconvert ! where to show (...) pulsesrc ! wavescope ! videoconvert ! ximagesink This will show the wave-style already mentioned. But GStreamer gives you other alternatives like these:\ngst-launch-1.0 pulsesrc ! audioconvert ! synaescope ! ximagesink gst-launch-1.0 pulsesrc ! audioconvert ! spectrascope ! ximagesink gst-launch-1.0 pulsesrc ! audioconvert ! spacescope ! ximagesink Now let's bring color into it!\ngst-launch-1.0 pulsesrc ! audioconvert ! wavescope style=color-lines shade-amount=0x0055bbff ! ximagesink To soften the lines:\ngst-launch-1.0 pulsesrc ! audioconvert ! wavescope style=color-lines shade-amount=0x0055bbff ! vertigotv ! ximagesink Play with the shaders and visualization-modes and create your own personal audio-visualizer. I know, the visualisations cannot compete with modern software for visualisation. Nevertheless it is a nice shortcut for your shell to quickly visualize music with free software!\nFurther information See the GStreamer wiki for details:\n gstreamer  You are not forced to use puseaudio. There are alternative commands for other sound servers like alsa.\n [raspberrypi forum] (https://www.raspberrypi.org/forums/viewtopic.php?t=86115)  Comments Name Message Send  Nothing here yet.\n "
+},
+{
+	"uri": "https://sharedmemory.netlify.com/hacks/0x01_terminal-filemanager/",
+	"title": "Terminal file manager",
+	"tags": ["cli", "ranger", "vim", "terminal"],
+	"description": "",
+	"content": "If you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in vim so I was looking for a file manager which support that kind of navigation, so I found ranger, the cli file manager.\nRequirements  ranger optional (w3m, archiv extract tools (like unrar, 7z, atool, etc.), pdftotext, and many more (check out the github repo at the bottom)  Installation Obviously you need to install ranger.\nArch based ranger is in the official arch repo so you can install it with:\nsudo pacman -S ranger or you can install the aur package:\nyay -S ranger-git Debian based ranger is also in the official debian repo. To install it run:\napt install ranger Configuration Like many cli programs ranger is also highly customizable. Depending on your motivation to change the default behaviour of ranger, copy at least the rc.conf into your config directory:\nmkdir -r ~/.config/ranger cp /usr/share/doc/ranger/config/rc.conf ~/.config/ranger Almost everyline in the rc.conf is documented, so you should be able to customize right away. If you want to customize even more, just copy the files form /usr/share/doc/ranger/config to your personal config folder in home.\nPersonal customization I really don't like the bookmarking system in ranger (maybe I didn't get the concept right), so I deactivated it:\nset autosave_bookmarks false set save_backtick_bookmark false # Bookmarks #map `\u0026lt;any\u0026gt; enter_bookmark %any #map '\u0026lt;any\u0026gt; enter_bookmark %any #map m\u0026lt;any\u0026gt; set_bookmark %any #map um\u0026lt;any\u0026gt; unset_bookmark %any # #map m\u0026lt;bg\u0026gt; draw_bookmarks #copymap m\u0026lt;bg\u0026gt; um\u0026lt;bg\u0026gt; `\u0026lt;bg\u0026gt; '\u0026lt;bg\u0026gt; Because I deactivated the bookmarks I needed something similar, so I added some mappings to my most visited directorys:\nmap dic cd ~/.config map did cd ~/Downloads map dis cd ~/scripts ranger does a good job with previewing all kind of files:\nset preview_images true set preview_images_method w3m filter files as-you-type:\nmap f console scout -prts%space Usage ranger has a 3 column view by default. The middle on is your \u0026ldquo;working\u0026rdquo; column. Here you can run all kind of (vim) commands (see below for quick explanation how the controls work). Generally the first and third column will show you the content \u0026ldquo;below\u0026rdquo; or \u0026ldquo;up\u0026rdquo; (if you would cd into that directory) that directory. Whenever you highlight a file instead of the directory, ranger will show you a preview of that file.\nControls Everybody somewhat familiar with vim will get the controls pretty fast. I case you don't:\n   Key Description     h moves you down the file tree   l moves you up the file tree   j moves you down the file list   k moves you up the file list    Copying, deleting, etc. will work like in vim. If you want to do an action on multiply files in the directory, use space to select that file:\n   Key Description     space select/unselect file   yy copy selection/file   dd cut selection/file   : run command   v toggle (select) all files in the directory   / search/jump to search-phrase    If you want more than one tab for browsing you can easily open more:\n   Key Description     alt+1 open/switch to tab 1   alt+2 open/switch to tab 2   alt+x open/switch to tab x   q close current tab    My often used commands ranger has some neat features. I will show some of my favorites.\nBulkrenaming Just select all files you want to rename (with space oder v) and then type :bulkrename. It will open a vim buffer which will let you rename the files with vim. When you are happy with your changes just exit the buffer with :wq.\nFlat Another nice feature is the flat command. Imagine you have file structure with a good amount of files and neasted directorys. With flat -1 ranger will prefix files in nested directory with the name of this directorys and \u0026ldquo;move\u0026rdquo; it in your working column. Now you have one list with all files and directorys, which you can excute commands on.\nFilter as you type In addition to the command above, it would be nice so somewhat filter that huge list of files. We can do that with :scout -prts. This will shrink the list as you type.\nFurther information If you want to customize ranger further more, something doesn't work or you need more information, check out the links below or open an issue on github for this post.\n arch wiki ranger github page  Comments Name Message Send  Nothing here yet.\n "
+},
+{
+	"uri": "https://sharedmemory.netlify.com/hacks/",
+	"title": "Hacks",
+	"tags": [],
+	"description": "",
+	"content": "\u0026ldquo;hacks\u0026rdquo; are small tutorials or blogposts which will boost your productivity, improve your workflow, teach you stuff or show you something currious or funny. Reading/Using all hacks below is the first step in becoming a real hackerman\u0026hellip;\n  Listing Best calculatorAre you sick of your simple calculator which can't even convert binary to hexadecimal without a hassle? Do you use google for your calculations? Look no further. I will show you the best (in my opionion) calculator for advanced math on all operating systems. Let's check out the open source, GPL licenced program called SpeedCrunsh.\n Linux on Microsoft SurfaceIf you want to run Linux exclusively or as a dual-boot configuration with Windows® on a Microsoft® Surface device you came to the right place.\n BatteryplotMonitor your batteryusage on a notebook\n Retro SoundcurveShow a visualization of your microphones input.\n Terminal file managerIf you are a terminal enthusiast like me, you appreciate every tool which will make your workflow faster and/or cooler in the terminal. File browsing is something we do day in, day out. This can get tedious, exspecially in the terminal. For me I really like the movement in vim so I was looking for a file manager which support that kind of navigation, so I found ranger, the cli file manager.\n Quick local file sharingDid you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following hack will teach you exactly that.\n  "
+},
+{
+	"uri": "https://sharedmemory.netlify.com/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/gui/",
+	"title": "GUI",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/categories/hacks/",
+	"title": "hacks",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/",
+	"title": "Home",
+	"tags": [],
+	"description": "",
+	"content": "Intro On Sharedmemory we share our (tech-) hacks, tricks, knowledge and thoughts. That means you can learn something about tech stuff like programming, hardware, operations systems, open source, sorftware, you name it.\nYou get the information needed right to the point. No blabla, no ads, no distraction.\nEverything is open-source so you can check out the progression of this site at any point in time.\nThis blog is pretty new so you can't see much at the moment, but we are working on it :). To see the \u0026ldquo;full hack list\u0026rdquo; click left on 0x00 Hacks or check out the recent ones below.\nRecent hacks   Best calculator Are you sick of your simple calculator which can't even convert binary to hexadecimal without a hassle? Do you use google for your calculations? Look no further. I will show you the best (in my opionion) calculator for advanced math on all operating systems. Let's check out the open source, GPL licenced program called SpeedCrunsh.\n  Linux on Microsoft Surface If you want to run Linux exclusively or as a dual-boot configuration with Windows® on a Microsoft® Surface device you came to the right place.\n  Batteryplot Monitor your batteryusage on a notebook\n  Contribute Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it. You also can leave a comment or open an issue for topic suggestions.\nDisclaimer Since we are no professionals in writing a blog, we can make mistakes so take any post with a grain of salt.\n"
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/math/",
+	"title": "math",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/kernel/",
+	"title": "kernel",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/linux/",
+	"title": "linux",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/microsoft-surface/",
+	"title": "microsoft-surface",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/battery/",
+	"title": "battery",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/cli/",
+	"title": "cli",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/notebook/",
+	"title": "notebook",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/statistics/",
+	"title": "statistics",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/audio/",
+	"title": "audio",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/fun/",
+	"title": "fun",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/ranger/",
+	"title": "ranger",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/terminal/",
+	"title": "terminal",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/vim/",
+	"title": "vim",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/hacks/",
+	"title": "hacks",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/python/",
+	"title": "python",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://sharedmemory.netlify.com/hacks/0x00_quick-local-file-sharing/",
+	"title": "Quick local file sharing",
+	"tags": ["python", "hacks", "sharing"],
+	"description": "",
+	"content": "Did you ever try to quickly share a couple of files from your pc to your phone or vise-versa at home? The following hack will teach you exactly that.\nIt will start a simple python webserver in your current directory which will list all directorys and files in that folder able for you to download. Check the ip address of that machine and browse to it on port 8000.\nKeep in mind that everybody in your network can potentially download the files as well because there is no authentication by default.\n Requirements  python(3) some way of aliasing commands in your shell  Installation Unix like systems  just download and install python(3) for your system  Android You can also start a python webserver from your android phone which requires you to install termux. To do so check the google play store or f-droid. After you are done with installing termux open termus and continue with installing python via:\npkg install python Python 3 will be installed in this case.\nTermux will probably download some stuff. Connect to Wi-Fi beforehand.\n Configuration Python3 (Linux/Mac/Termux) If you are using a Unix like system and installed python3, add\nalias share=\u0026quot;python3 -m http.server\u0026quot; to your (.bashrc) or whatever configuration file is used by your shell.\nPython (Linux/Mac) If you are on a Unix like system and you choose to use python(2) instead of python3, add\nalias share=\u0026quot;python -m SimpleHTTPServer 8000\u0026quot; to your (.bashrc) or whatever configuration file is used by your shell.\nUsage Move into the directory you want to share and simply type:\nshare  Comments Name Message Send  braunbearded on 20.01.2020\n Another test message  braunbearded on 20.01.2020\n Test deleting pull branch  braunbearded on 20.01.2020\n delete branch please  braunbearded on 20.01.2020\n last test for today  braunbearded on 20.01.2020\n real last test   "
+},
+{
+	"uri": "https://sharedmemory.netlify.com/tags/sharing/",
+	"title": "sharing",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
