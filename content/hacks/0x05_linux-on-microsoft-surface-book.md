@@ -15,7 +15,7 @@ rip it off and install your favourite Linux distribution.
 I bought my Surface Book without having any idea how powerful and convenient Linux can be. Sketching together a simple script to 
 automate a task or writing complex applications in Java or C, Linux will be your goto OS for developement (maybe MacOS if you got the money).
 So I decided, I'll try to make it work on my Surface device and discovered, I am not the only one with this goal.  
-In the following article I try give some useful tips and share my experiences.
+In the following article I will try to give some useful tips and share my experiences.
 
 ### Overview
 
