@@ -1,0 +1,17 @@
+comments:
+  allowedFields: ["name", "message"]
+  branch: "master"
+  commitMessage: "New comment from staticman"
+  filename: "{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"
+  moderation: true
+  name: "sharedmemory.netlify.com"
+  path: "data/comments/{options.slug}"
+  requiredFields: ["name", "message"]
+  transforms:
+    email: md5
