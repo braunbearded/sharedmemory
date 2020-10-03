@@ -1,14 +1,19 @@
 ---
 title: "i3 status using FontAwesome!"
 date: 2020-09-25T0:0:0+01:00
-pre: "<b>0x05 </b>"
+pre: "<b>0x06 </b>"
 weight: 1
 tags: ["i3", "unixporn"]
 categories: ["hacks"]
 summary: "Nicer symbols in i3 status using FontAwesome."
 ---
+![screenshot](/hacks/images/0x06-statusbar.png)
 
-[@claussmann](https://github.com/claussmann) 
+[@claussmann](https://github.com/claussmann) i3 is a very lightweigt desktop environment.
+It is resource-saving, easy to use with the keyboard and highly costumizable.
+But why should *ressource-saving* also mean *ugly*?
+Well, i admit the out of the box configuration of i3 is not that beautiful.
+This guide shows you, how you get the most out of the i3 status bar! 
 
 ## Requirements
 
@@ -68,7 +73,7 @@ battery all {
 
 ```
 
-Until now this was the basic setup for the i3status bar. For further information see TODO
+Until now this was the basic setup for the i3status bar. For further information see [i3 documentation](https://i3wm.org/i3status/manpage.html).
 If you now reload i3 (usually with mod+shift+R) you should see the i3status bar at the top of your screen showing your wifi-connection and battery percentage.
 
 
@@ -76,11 +81,11 @@ If you now reload i3 (usually with mod+shift+R) you should see the i3status bar 
 ## Bring the Symbols!
 
 FontAwesome brings a variety of nice icons. Some of them are for free and some cost extra.
-The icons can be found and searched at [FontAwesome Galery](fontawesome.com/icons?d=gallery).
-When you click on an icon you can see its hexadecimal utf-8/utf-16 representation.
+The icons can be found and searched at [FontAwesome Galery](https://fontawesome.com/icons?d=gallery).
+When you click on an icon you can see its hexadecimal utf-8 respectively utf-16 representation. The WIFI-symbol for example has the hexadecimal representation 0xf1eb.
 
 Moving back to your ~/.config/i3status/config file, you can add the icons where you want by entering their hexadecimal representation.
-In the nano texteditor this works by pressing CTL+Shift+U. A small u appears and you can simply enter the utf-8/16-hexadecimal code from the icon.
+In the nano texteditor this works by pressing CTL+Shift+U. A small u appears and you can simply enter the utf-8 or utf-16 hexadecimal code from the icon and press enter.
 This could for example look as follows:
 
 ```
