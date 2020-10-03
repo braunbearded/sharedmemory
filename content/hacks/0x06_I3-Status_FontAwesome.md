@@ -6,6 +6,8 @@ weight: 1
 tags: ["i3", "unixporn"]
 categories: ["hacks"]
 summary: "Nicer symbols in i3 status using FontAwesome."
+thumbnail: "/hacks/images/0x06-statusbar.png"
+thumbnailalt: "example statusbar"
 ---
 ![screenshot](/hacks/images/0x06-statusbar.png)
 
