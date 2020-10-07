@@ -6,6 +6,8 @@ weight: 1
 tags: ["bash", "productivity"]
 categories: ["hacks"]
 summary: "Often *cd* and *ls* are called together. So why don't we define a macro for them?"
+thumbnail: "/hacks/images/0x07-screenshot.png"
+thumbnailalt: "A simple bash function."
 ---
 
 [@claussmann](https://github.com/claussmann)
