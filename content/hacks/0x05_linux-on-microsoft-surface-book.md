@@ -1,6 +1,6 @@
 ---
 title: "Linux on Microsoft Surface"
-date: 2020-02-15T19:22:59+01:00
+date: "2020-02-15T00:00:00"
 pre: "<b>0x05 </b>"
 weight: 1
 tags: ["linux", "kernel", "microsoft-surface"]

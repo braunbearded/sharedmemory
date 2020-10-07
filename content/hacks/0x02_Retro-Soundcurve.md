@@ -1,6 +1,6 @@
 ---
 title: "Retro Soundcurve"
-date: 2020-01-12T21:21:31+01:00
+date: "2020-01-12T00:00:00"
 pre: "<b>0x02 </b>"
 weight: 1
 tags: ["fun", "audio", "cli"]
