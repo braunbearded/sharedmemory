@@ -1,6 +1,6 @@
 ---
 title: "i3 status using FontAwesome!"
-date: 2020-09-25T0:0:0+01:00
+date: "2020-09-25T00:00:00"
 pre: "<b>0x06 </b>"
 weight: 1
 tags: ["i3", "unixporn"]

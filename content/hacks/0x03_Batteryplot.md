@@ -1,6 +1,6 @@
 ---
 title: "Batteryplot"
-date: 2020-01-13T12:46:21+01:00
+date: "2020-01-13T00:00:00"
 pre: "<b>0x03 </b>"
 weight: 1
 tags: ["battery", "notebook", "cli", "statistics"]

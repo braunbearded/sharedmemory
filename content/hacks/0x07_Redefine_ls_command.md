@@ -1,6 +1,6 @@
 ---
 title: "Redefining cd and ls to work together."
-date: 2020-10-02T0:0:0+01:00
+date: "2020-10-02T00:00:00"
 pre: "<b>0x07 </b>"
 weight: 1
 tags: ["bash", "productivity"]

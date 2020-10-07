@@ -1,6 +1,6 @@
 ---
 title: "Terminal file manager"
-date: 2020-01-12T12:34:31+01:00
+date: "2020-01-12T00:00:00"
 pre: "<b>0x01 </b>"
 weight: 1
 tags: ["cli", "ranger", "vim", "terminal"]
