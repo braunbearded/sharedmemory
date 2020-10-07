@@ -1,5 +1,5 @@
 ---
-title: "i3 status using FontAwesome!"
+title: "i3 Status Using FontAwesome!"
 date: "2020-09-25T00:00:00"
 pre: "<b>0x06 </b>"
 weight: 1

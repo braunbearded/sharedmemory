@@ -1,5 +1,5 @@
 ---
-title: "Quick local file sharing"
+title: "Quick Local File Sharing"
 date: "2020-01-10T00:00:00"
 weight: 0
 pre: "<b>0x00 </b>"

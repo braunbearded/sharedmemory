@@ -1,5 +1,5 @@
 ---
-title: "Best calculator"
+title: "Best Calculator"
 date: "2020-01-15T00:00:00"
 pre: "<b>0x04 </b>"
 weight: 1

@@ -1,5 +1,5 @@
 ---
-title: "Terminal file manager"
+title: "Terminal File Manager"
 date: "2020-01-12T00:00:00"
 pre: "<b>0x01 </b>"
 weight: 1
