@@ -54,3 +54,7 @@ It takes a bit of time refining the configuration and getting used to it afterwa
 a whole new gaming experience enjoying my favourite games without cramping hands after hours of playtime.
 All in all the ability to map keyboard and mouse inputs to a controller enables new possibilities in gaming
 and I highly recomend it to everyone who is playing a lot of non-competitive chilled games. 
+
+### Sources
+
+Controller image: Image from the [Joytokey](https://joytokey.net/en/) website

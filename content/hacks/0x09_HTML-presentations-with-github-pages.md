@@ -1,13 +1,12 @@
 ---
-title: "HTML presentations with github pages"
+title: "HTML presentations with GitHub-pages"
 date: 2020-10-23T17:01:50+02:00
-draft: true
 pre: "<b>0x09 </b>"
 weight: 1
 tags: ["github-pages","HTML","presentation"]
 categories: ["hacks"]
 summary: "HTML presentation are a non-platform bound form of presentations which can be shared publicly through Github-pages"
-thumbnail: "/sharedmemory/0x09_pages.png"
+thumbnail: "/hacks/images/0x09-pages.png"
 thumbnailalt: "Github pages logo"
 ---
 
@@ -70,4 +69,6 @@ The setup might be a bit fiddly to get into but after a while you get used to it
 The deployment with `Github pages` is a very easy and free way of hosting a website for these specific purposes and make your presentation 
 available.
 
+### Sources
 
+Octocat Image (Github Logo): Property and rights are held by [GitHub](https://github.com/logos)
